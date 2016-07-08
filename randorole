@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+#
+#
+#
+#
+#
+#
+import subprocess
+from random import shuffle
+#
+#
+
+people = int(raw_input('How many people are working today? '))
+z = people + 1
+#
+ST=[]
+x=1
+while x < z:
+    ST.append(raw_input('Who is working today? '))
+    x+=1
+#
+Job = []
+y=1
+while y < z:
+    Job.append(raw_input('Which roles need to be assigned today? '))
+    y+=1
+shuffle(Job)
+print ST
+print Job
